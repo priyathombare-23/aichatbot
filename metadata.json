@@ -1,0 +1,6 @@
+{
+  "name": "Vidya - Official KJSIT AI Assistant",
+  "description": "Official AI Chatbot for K J Somaiya Institute of Technology (KJSIT), Sion, Mumbai",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
