@@ -21,16 +21,7 @@ interface SavedLead {
   createdAt: string;
 }
 
-const leadsDatabase: SavedLead[] = [
-  {
-    id: "lead-1",
-    fullName: "Priya Thombare",
-    email: "priya.thombare@somaiya.edu",
-    phone: "918793980301",
-    branch: "CS (Computer Engineering)",
-    createdAt: new Date().toISOString(),
-  },
-];
+const leadsDatabase: SavedLead[] = [];
 
 // Initialize Google GenAI SDK
 const ai = new GoogleGenAI({
