@@ -9,8 +9,8 @@ interface AdminPortalProps {
 
 export const AdminPortal: React.FC<AdminPortalProps> = ({ isOpen, onClose }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [username, setUsername] = useState('admin@kjsit.edu');
-  const [password, setPassword] = useState('admin123');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const [loginError, setLoginError] = useState('');
   const [leads, setLeads] = useState<UserLead[]>([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -122,13 +122,6 @@ export const AdminPortal: React.FC<AdminPortalProps> = ({ isOpen, onClose }) => 
               <p className="text-xs text-slate-600">
                 Sign in to view real-time leads captured by Vidya AI Chatbot.
               </p>
-            </div>
-
-            {/* Display Credentials Box */}
-            <div className="bg-amber-50 border border-amber-300 rounded-xl p-3 text-xs text-amber-900 space-y-1">
-              <p className="font-bold">🔑 Test Admin Login Credentials:</p>
-              <p>Email: <span className="font-mono font-semibold">admin@kjsit.edu</span></p>
-              <p>Password: <span className="font-mono font-semibold">admin123</span></p>
             </div>
 
             {loginError && (
